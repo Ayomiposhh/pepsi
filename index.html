@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Pepsi</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images/pepsilogo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nesciunt, recusandae, id corporis amet assumenda
+                    ex dolor aliquam quibusdam sunt minus ratione nam 
+                    voluptatem eum ipsum! Rem quisquam qui vel itaque?
+                </p>
+                <a href="#">View All Products</a>
+
+            </div>
+            <div class="imgBox">
+                <img src="images/pepsi2.jpg" class="pepsi">
+
+            </div>
+        </div>
+        <ul class="thumb">
+           <li><img src="images/pepsi1.jpg" onclick="imgSlider('images/pepsi1.jpg');changeBgColor('	#000000')" ></li> 
+           <li><img src="images/pepsi2.jpg" onclick="imgSlider('images/pepsi2.jpg');changeBgColor('#0000FF')" ></li> 
+           <li><img src="images/pepsi3.webp" onclick="imgSlider('images/pepsi3.webp');changeBgColor('#008000')" ></li> 
+        </ul>
+        <ul class="sci">
+            <a href="#"><img src="../../fa fa-facebook-official"></a>
+            <a href="#"><img src="fa fa-twitter-square"></a>
+            <a href="#"><img src="fa fa-instagram"></a>
+             
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+       function imgSlider(anything){
+        document.querySelector('.pepsi').src = anything;
+
+       }
+       function changeBgColor(color){
+        const sec =document.querySelector('.sec');
+        sec.style.background = color;
+       }
+    </script>
+</body>
+</html>
